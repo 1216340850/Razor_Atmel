@@ -92,6 +92,9 @@ void UserApp1Initialize(void)
   if( 1 )
   {
     UserApp1_StateMachine = UserApp1SM_Idle;
+    LedOff(BLUE);
+    LedBlink(BLUE,LED_1HZ);
+    
   }
   else
   {
