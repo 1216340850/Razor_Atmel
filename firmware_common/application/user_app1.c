@@ -85,8 +85,21 @@ Requires:
 Promises:
   - 
 */
+
+
+
+
 void UserApp1Initialize(void)
 {
+   LCDCommand(LCD_CLEAR_CMD);
+   u8 au8Message[] = "51780209"; 
+   u8 au8Message2[] = "LUJIACHAO";  
+   LCDMessage(LINE1_START_ADDR, au8Message);  
+   LCDMessage(LINE2_START_ADDR, au8Message2);
+   
+  
+   
+   
  
   /* If good initialization, set state to Idle */
   if( 1 )
@@ -100,7 +113,6 @@ void UserApp1Initialize(void)
   }
 
 } /* end UserApp1Initialize() */
-
   
 /*----------------------------------------------------------------------------------------------------------------------
 Function UserApp1RunActiveState()
